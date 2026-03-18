@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Zebrada</title>
+    <!-- CSS INTERNO -->
+    <style>
+        /* No CSS interno precisamos de seletores para aplicar as formatações */
+        body {background-color: #dadada;
+        font-family: 'Verdana';}
+        td, th {padding: 6px;
+        line-height: 1.6;}    /* padding refere-se ao espaçamento */
+
+     /* Zebrando a tabela através das linhas pares e ímpares */
+     tr:nth-child(even) {background-color: #e8eef1;}
+     /* EVEN -> Par
+     ODD -> Impar */
+     tr:nth-child(odd) {background-color: #c9daee;}
+     
+
+    </style>
+</head>
+<body>
+<!-- CSS INLINE -->
+    <table border="1">
+        <caption>Tabela de clientes</caption>
+        <thead style="background-color: lightblue;">
+            <tr>
+                <th colspan="3"> Dados Pessoais:</th>
+                <th colspan="2">Endereço:</th>
+                <th>Contato:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Nome:</th>
+                <th>Idade:</th>
+                <th>Profissão:</th>
+                <th>Rua:</th>
+                <th>Cidade:</th>
+                <th>Email:</th>
+            </tr>
+            <tr>
+                <td>Ana de Souza</td>
+                <td>25</td>
+                <td>Engenharia</td>
+                <td>Avenida Carlos de Souza</td>
+                <td>São Paulo</td>
+                <td>anasouza67@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Borj</td>
+                <td>52</td>
+                <td>Cientista</td>
+                <td>ThrillerBarck</td>
+                <td>Xique-Xique</td>
+                <td>BorjsPun@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Veríssimo</td>
+                <td>21</td>
+                <td>Advogado</td>
+                <td>Marcos de Santos</td>
+                <td>Registro</td>
+                <td>phoenixwright@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Bluezão</td>
+                <td>67</td>
+                <td>Youtuber</td>
+                <td>Centro Cebola</td>
+                <td>são Paulo</td>
+                <td>bluezãoshibata67@gmail.com</td>
+            </tr>
+             <tr>
+                <td>Shibata Tensei</td>
+                <td>17</td>
+                <td>trafego</td>
+                <td>marcelo de musk</td>
+                <td>são Paulo</td>
+                <td>Shibatatensei@gmail.com</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="6">Cadastro em: 11/09/2011</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
