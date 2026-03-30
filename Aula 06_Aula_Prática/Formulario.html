@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_Prática_Formulário</title>
+</head>
+<body>
+    <head>
+       <h1>Cadastro de Aluno DSM </h1>
+    </head>
+    <p> <strong>Formulário destinado ao cadastro de alunos, com o objetivo de coletar informações pessoais. Os dados preenchidos serão utilizados para identificação e controle interno, garantindo um registro padronizado e eficiente.</strong>
+</p>
+    <main>
+    <section>
+       <form action="#" method="post"></form>
+        
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="name"> <strong>Nome completo </strong></label> <br>
+        <input type="text" name="nome" id="nome" placeholder="Insira o nome completo" required>
+         <br>
+        <label for="email">E-mail</label> <br>
+        <input type="email" name="email" id="email" placeholder="Insira seu E-mail" required>
+         <br>
+         <label for="password">Senha:</label> <br>
+         <input type="password" name="pasword" id="password" placeholder="Insira sua senha" required>
+         <br>
+         <label for="nascimento">Data de nascimento</label> <br>
+         <input type="date" name="nascimento" id="nascimento"> <br>
+         <label for="Periodo" >Periodo: </label>
+         <input type="radio" name="Periodo" id="Man" value="M"> Manhã
+         <input type="radio" name="Periodo" id="Noi" value="N"> Noite
+      <fieldset>
+        <legend>Dados Acadêmicos</legend>
+        <label for="Cursos"> Cursos:</label>
+        <select name="Cursos" id="Cursos">
+            <option value="DSM">DSM</option>
+            <option value="ADS">ADS</option>
+            <option value="Outros">Outros</option>  
+        </select>
+        <label for="observacoes">Observações</label> <br> <br>
+        <textarea rows="6" cols="40" name="observacoes" id="observacoes" placeholder="Escreva aqui as descrições sobre o curso"></textarea> <br><br>
+        <button type="submit">Enviar</button>
+        <button type="Reset">Limpar</button>
+      </fieldset>
+</section>
+    </main>
+</body>
+</html>
